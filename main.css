@@ -99,6 +99,11 @@
     font-size: 20px;
 }
 
+.add_to_cart:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
 .add_to_cart svg {
     /* border: 1px solid black; */
     margin-right: 10px;
@@ -216,6 +221,7 @@
     padding: 2px 7px;
     border-radius: 50%;
     font-size: 12px;
+    display: none;
 }
 
 svg {
@@ -253,10 +259,11 @@ svg {
     #mob {
         position: fixed;
         height: 100vh;
-        right: -100%;
+        left: -100%;
         top: 0;
         background: rgba(0, 0, 0, 0.4);
         width: 30%;
+        transition: ease 0.2s;
     }
 
     .dropdown li {
@@ -306,7 +313,8 @@ svg {
     .open_menu {
         /* border: 1px solid black; */
         display: block;
-        margin-left: 30px;
+        margin-left: 20px;
+        margin-top: 4px;
     }
 
     .logo_desktop {
@@ -315,7 +323,7 @@ svg {
 
     .logo {
         /* border: 1px solid black; */
-        margin-left: -50px;
+        margin-left: -20px;
         display: block;
     }
 
@@ -381,7 +389,7 @@ svg {
 
     .percentage_off {
         /* border: 1px solid black; */
-        margin-left: -90px;        
+        margin-left: -20%;        
     }
 
     .desktop_slashed_price {
@@ -781,5 +789,27 @@ svg {
 
     .add_container {
         flex: 0 0 55%;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 320px) {
+    .percentage_off {
+        margin-right: -20px;
+    }
+
+    .logo {
+        margin-left: 1px;
+    }
+
+    .avatar {
+        margin-right: 10px;
+    }
+
+    .right {
+        right: 8px;
+    }
+
+    .left {
+        left: 8px;
     }
 }

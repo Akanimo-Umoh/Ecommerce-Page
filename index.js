@@ -8,15 +8,17 @@ let count = 0;
 
 open_menu.onclick = function(){
     mobile_menu.style.left = "0";
-    document.body.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
-    document.body.style.filter = "grayscale(70%)";
+    document.getElementById("mob").style.left = "70%";
+    // document.body.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
+    // document.body.style.filter = "grayscale(70%)";
 }
 
 close_menu.onclick = function(){
     mobile_menu.style.left = "-100%";
     mobile_container.style.left = "-100%";
-    document.body.style.backgroundColor = "white";
-    document.body.style.filter = "grayscale(0%)";
+    document.getElementById("mob").style.left = "-100%";
+    // document.body.style.backgroundColor = "white";
+    // document.body.style.filter = "grayscale(0%)";
 }
 
 decrease.onclick = function(){
@@ -101,7 +103,7 @@ function closeModal() {
 var slideIndex1 = 1;
 showSlides1(slideIndex);
   
-function plusSlides(n) {
+function plusSlides1(n) {
   showSlides1(slideIndex += n);
 }
   
