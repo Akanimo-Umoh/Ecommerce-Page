@@ -631,6 +631,7 @@ svg {
     .avatar:hover {
         border: 3px solid var(--Orange);
         border-radius: 50%;
+        cursor: pointer;
     }
 
     .add_to_cart:hover {
