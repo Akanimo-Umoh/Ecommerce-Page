@@ -641,6 +641,7 @@ svg {
 
     .thumb:hover {
         opacity: 0.6;
+        cursor: pointer;
     }
 
     .thumb:focus {
