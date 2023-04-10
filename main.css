@@ -141,6 +141,7 @@
     border: 1px solid var(--Orange);
     border-radius: 5px;
     color: var(--White);
+    font-weight: var(--w700);
 }
 
 .cart_txt {
@@ -811,5 +812,27 @@ svg {
 
     .left {
         left: 8px;
+    }
+
+    .cart_items_container {
+        width: 300px;
+        left: 60%;
+        margin-left: -181px;
+    }
+
+    .checkout_btn {
+        padding: 18px 105px;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 355px) {
+    .cart_items_container {
+        width: 310px;
+        left: 60%;
+        margin-left: -187px;
+    }
+
+    .checkout_btn {
+        padding: 18px 108px;
     }
 }
