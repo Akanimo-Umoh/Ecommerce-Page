@@ -248,7 +248,7 @@ svg {
         background: var(--White);
         z-index: 1;
         /* border: 4px solid red; */
-        transition: ease .4s;
+        transition: ease .3s;
     }
 
     #mobile {
